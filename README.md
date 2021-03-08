@@ -25,4 +25,4 @@
 
 ## 下载地址
 
-[releases](https://github.com/Xposed-Modules-Repo/com.test.unlockmiui)
+[releases](https://github.com/Xposed-Modules-Repo/com.test.unlockmiui/releases)
