@@ -22,3 +22,7 @@
 
 
 注：该模块只去掉了在扫描二维码时的机型检测，无法解决其他问题。如使用了该模块仍旧无法使用MIUI＋，请查看是否已经关闭小米快传或者自行百度。
+
+## 下载地址
+
+[releases](https://github.com/Xposed-Modules-Repo/com.test.unlockmiui)
