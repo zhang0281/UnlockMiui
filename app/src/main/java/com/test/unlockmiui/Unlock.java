@@ -17,13 +17,13 @@ public class Unlock implements IXposedHookLoadPackage {
         if (!lpparam.packageName.equals("com.xiaomi.mirror")) {
             return;
         }
-        XposedBridge.log("已加载MIUI+应用。");
+        XposedBridge.log("Loaded APP: MIUI+ BETA version");
 
         findAndHookMethod("com.xiaomi.mirror.ak", lpparam.classLoader, "a", Context.class, new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                 param.setResult(true);
-                XposedBridge.log("替换方法返回值成功。");
+                XposedBridge.log("Set the method result is successful。");
                 // this will be called before the clock was updated by the original method
             }
 //            @Override
