@@ -21,7 +21,7 @@
                 android:value="true"/>
         <meta-data
                 android:name="xposeddescription"
-                android:value="去除MIUI+的机型限制。\n使用方法：1. 安装该应用并启用模块。2. 在LSPposed中选中 MIUI+ Beta版。3. 结束运行并重新启动MIUI+。"/>
+                android:value="去除MIUI+的机型限制。详细使用方法可查看该模块github地址。如有问题可以在github上提issue。"/>
         <meta-data
                 android:name="xposedminversion"
                 android:value="70"/>
