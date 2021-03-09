@@ -21,16 +21,10 @@ public class AddMirrorSettingItem implements IXposedHookLoadPackage {
         findAndHookMethod("com.android.settings.connection.MiMirrorController", lpparam.classLoader, "isMirrorSupported", new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                // this will be called before the clock was updated by the original method
                 param.setResult(true);
                 XposedBridge.log("Set the method result is successful。");
-                // this will be called before the clock was updated by the original method
             }
-//            @Override
-//            protected void afterHookedMethod(MethodHookParam param) throws Throwable {
-//                param.setResult(true);
-//                XposedBridge.log("替换方法返回值成功。");
-//                // this will be called after the clock was updated by the original method
-//            }
         });
     }
 }
