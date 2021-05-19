@@ -20,7 +20,7 @@
 
 ## 提取出的MIUI+相关文件
 
-[下载链接](https://wws.lanzous.com/b01u1if2d)密码:h61h
+[下载链接](https://wws.lanzoux.com/b01u1if2d)密码:h61h
 
 （链接内有模块和提取出来的小米互联通信服务，扫一扫，MIUI+。）
 
