@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.test.unlockmiui"
         minSdkVersion 29
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0.2"
+        targetSdkVersion 31
+        versionCode 103
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

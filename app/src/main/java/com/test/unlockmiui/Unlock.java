@@ -27,5 +27,14 @@ public class Unlock implements IXposedHookLoadPackage {
                 XposedBridge.log("Set the method result is successful。");
             }
         });
+        // 尝试性对3.6.13进行兼容
+        findAndHookMethod("com.xiaomi.mirror.utils.SystemUtils", lpparam.classLoader, "isModelSupport", Context.class, new XC_MethodHook() {
+            @Override
+            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                // this will be called before the clock was updated by the original method
+                param.setResult(true);
+                XposedBridge.log("Set the method result is successful。");
+            }
+        });
     }
 }
